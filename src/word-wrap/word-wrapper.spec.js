@@ -1,4 +1,4 @@
-import {WordWrapper} from "./word-wrapper";
+import { WordWrapper } from './word-wrapper'
 
 describe('WordWrapper', () => {
   it('should wrap text with the maximum given column length', () => {
