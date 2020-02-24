@@ -27,9 +27,11 @@ Take one down and pass it around, ${number - 1} bottles of beer on the wall.
   }
 
   range(start, end) {
-    const offset = end === 0 ? 0 : start - 2
-    return Array.from({ length: start - end + 1 }, (_, k) => k + offset)
-      .slice()
-      .reverse()
+    const numbers = []
+    for (let i = start; i >= end; i--) {
+      numbers.push(i)
+    }
+
+    return numbers
   }
 }
